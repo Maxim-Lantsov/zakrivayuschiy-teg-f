@@ -1,1 +1,14 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main-font-family: 'Inter', sans-serif;
+    --main-font-weight: 400;
+
+    --color-black: #000;
+    --color-white: #fff;
+    --color-green: #00CC14;
+
+    --page-background-color: #fff;
+    --page-color-text: #000;
+
+    --like-heart-color: #FF0000;
+}
