@@ -6,12 +6,18 @@
 */
 :root.theme-light {
     --background-color: var(--color-white, #ffffff);
-    --text-color: var(--color-black);  
+    --text-color: var(--color-black);
+    --main-font-weight: 400;
+    --main-font-title: 700;
+    --accent-color: var(--color-black);  
 }
 
 :root.theme-dark {
     --background-color: var(--color-black, #000000);
     --text-color: var(--color-white);
+    --main-font-weight: 465;
+    --main-font-title: 785;
+    --accent-color: var(--color-green);
 }
 
 
@@ -19,7 +25,9 @@
 @media (prefers-color-scheme: dark) {
     :root {
     --background-color: var(--color-black, #000000);
-    --text-color: var(--color-white);  
+    --text-color: var(--color-white);
+    --main-font-weight: 465;
+    --main-font-title: 785; 
     }
 }
 

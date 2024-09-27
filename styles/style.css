@@ -18,4 +18,12 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   background-color: var(--background-color, #fff);
+  font-family: var(----main-font-family, 'sans-serif');
+  font-variation-settings: 'weight' var(--main-font-weight);
+  color: var(--accent-color);
+}
+
+.header {
+  max-block-size: 368px;
+  min-inline-size: 700px;
 }
