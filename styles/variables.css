@@ -3,9 +3,8 @@
     --main-font-family: 'Inter';
     --accent-font-family: 'PressStart2P';
 
-    --main-font-weight: 400;
     --main-font-title: 700; 
-
+    --main-font-weight: 400;
 
     --color-black: #000;
     --color-white: #fff;
@@ -15,6 +14,8 @@
     --page-color-text: #000;
 
     --like-heart-color: #FF0000;
-}
 
-/* Вес вариативного шрифта будет меняться между цветовыми схемами. В тёмной теме шрифт потолще, чтобы легче читалось. Удобно вынести в переменные толщину основного текста карточки и толщину заголовка карточки. В итоге у вас получится четыре переменные, связанные с типографикой. Основной вес шрифта  */
+
+    --header-logo-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --header-title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
