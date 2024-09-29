@@ -34,7 +34,9 @@
     --text-color: var(--color-white);
     --main-font-weight: 465;
     --main-font-title: 785;
-    --background-image: repeating-linear-gradient() 
+    --background-image: repeating-linear-gradient(to left, #000, #000 2px, transparent 2px,transparent 4px),
+    repeating-linear-gradient(to bottom,#000, #000 2px, transparent 2px, transparent 4px),
+    linear-gradient(to bottom, #007f0c, #004306); 
     }
 }
 
