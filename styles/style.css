@@ -33,8 +33,8 @@
 .header {
   margin-top: 102px;
   text-align: center;
-  max-inline-size: 696px;
-  max-block-size: 364px;
+  max-inline-size: 700px;
+  max-block-size: 370px;
   border: solid 2px #000;
   background-color: #fff;
   font-family: var(--accent-font-family, 'PressStart2P');
@@ -62,7 +62,7 @@
   display: grid;
   gap: 8px;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 19px;
 }
 
 .theme-menu__button {
