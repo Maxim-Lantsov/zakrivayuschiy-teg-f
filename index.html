@@ -8,7 +8,7 @@
     <title>Закрывающий тег</title>
     <!--Добавлен favicon-->
     <link rel="icon" href="./images/favicon.ico" sizes="any">
-    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="./images/favicon.png" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./images/favicon.png">
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -19,7 +19,7 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header center">
+    <header class="header">
       <p class="header__logo">&lt;/html&gt;</p>
       <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
@@ -49,10 +49,23 @@
       </nav>
     </header>
     <!-- Мой код -->
-    <main class="main">
-      <ul>
-        
-      </ul>
+    <main class="content">
+      <section class="cards">
+        <ul class="cards__list">
+          <li class="cards__list-item">
+            <article class="card">
+              <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+              <div class="card__img">
+                <img src="./images/Car.png" alt="Машина" loading="lazy">
+              </div>
+              <div class="card__footer">
+                <p class="car__text">На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не подвержены перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.</p>
+                <p class="car__text">Место для ваших воспоминаний о начале второго спринта.</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
