@@ -24,7 +24,7 @@
   background-image: var(--background-image);
   background-attachment: fixed;
   background-size: cover;
-  background-color: var(--background-color, #fff);
+  background-color: var(--card-background-color, #fff);
   font-family: var(--main-font-family, 'sans-serif');
   font-variation-settings: 'weight' var(--main-font-weight);
   color: var(--accent-color);
@@ -37,7 +37,7 @@
   min-inline-size: 700px;
   min-block-size: 368px;
   border: solid 2px #000;
-  background-color: #fff;
+  background-color: var(--page-background-color);
   font-family: var(--accent-font-family, 'PressStart2P');
   font-weight: var(--main-font-weight);
   text-transform: uppercase;
@@ -97,18 +97,95 @@
 .cards {
 }
 .cards__list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
+
 .cards__list-item {
-  inline-size: 700px;
-  min-block-size: 1001px;
+  border: solid 2px #000;
+  
+  background-color: var(--card-background-color, #fff);
 }
 .card {
+  max-inline-size: 696px;
 }
+
 .card__title {
+  font-family: 'Inter, sans-serif';
+  font-size: 18px;
+  padding: 3px 24px 3px 10px;
 }
+
+.card__image{
+  position: relative;
+  overflow: hidden;
+  max-block-size: 696px;
+  border: 1px solid var(--border-color);
+}
+
+.card__img_text {
+  -webkit-text-stroke: 1px var(--card__img_text);
+  font-size: 14px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  opacity: 0.5;
+  font-family: var(--accent-font-family);
+  color: var(--text-color);
+  z-index: 1;
+}
+
 .card__img {
+  width: 696px;
+  object-fit: cover;
 }
+
+/* Фильтры */
+
+img.grayscale {
+  filter: grayscale(70%);
+}
+
+img.saturate {
+  filter: saturate(4);
+}
+
+img.invert {
+  filter: invert(90%);
+}
+
+img.contrast {
+  filter:  contrast(140%) hue-rotate(35deg);
+}
+
+img.sepia {
+  filter: sepia(90%);
+}
+
+img.blur {
+  filter: blur(12px);
+}
+
+img.hue-rotate {
+  filter: hue-rotate(80deg) contrast(50%) saturate(160%) blur(2px);
+}
+
 .card__footer {
+
 }
+
+.card__paragraph {
+  padding: 25px;
+}
+
 .car__text {
+  font-family: 'Inter, sans-serif';
+  font-weight: 400;
+  font-size: 18px;
+  padding-top: 27px;
+}
+
+.card__button {
+
 }

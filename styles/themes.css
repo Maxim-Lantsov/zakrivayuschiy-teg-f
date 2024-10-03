@@ -9,7 +9,11 @@
     --text-color: var(--color-black);
     --main-font-weight: 400;
     --main-font-title: 700;
-    --accent-color: var(--color-black); 
+    --accent-color: var(--color-black);
+    --page-background-color: #fff;
+    --card-background-color: #fff;
+    --card__img_text: rgb(255, 255, 255, 0.6);
+    --border-color: var(--color-black);
     --background-image: repeating-linear-gradient(to left, #d3d3d3, #d3d3d3 2px, transparent 2px,transparent 4px),
     repeating-linear-gradient(to bottom,#d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
@@ -17,10 +21,14 @@
 
 :root.theme-dark {
     --background-color: var(--color-black, #000000);
-    --text-color: var(--color-white);
+    --text-color: var(--color-green);
     --main-font-weight: 465;
     --main-font-title: 785;
     --accent-color: var(--color-green);
+    --page-background-color: #000;
+    --card-background-color: #000;
+    --card__img_text: rgb(0, 0, 0, 0.6);
+    --border-color: var(--color-green);
     --background-image: repeating-linear-gradient(to left, #000, #000 2px, transparent 2px,transparent 4px),
     repeating-linear-gradient(to bottom,#000, #000 2px, transparent 2px, transparent 4px),
     linear-gradient(to bottom, #007f0c, #004306);
@@ -31,9 +39,13 @@
 @media (prefers-color-scheme: dark) {
     :root {
     --background-color: var(--color-black, #000000);
-    --text-color: var(--color-white);
+    --text-color: var(--color-green);
     --main-font-weight: 465;
     --main-font-title: 785;
+    --page-background-color: #000;
+    --card-background-color: #000;
+    --card__img_text: rgb(0, 0, 0, 0.6);
+    --border-color: var(--color-green);
     --background-image: repeating-linear-gradient(to left, #000, #000 2px, transparent 2px,transparent 4px),
     repeating-linear-gradient(to bottom,#000, #000 2px, transparent 2px, transparent 4px),
     linear-gradient(to bottom, #007f0c, #004306); 
