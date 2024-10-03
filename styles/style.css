@@ -24,11 +24,8 @@
   background-image: var(--background-image);
   background-attachment: fixed;
   background-size: cover;
-<<<<<<< HEAD
   background-color: var(--card-background-color, #fff);
-=======
   background-color: var(--background-color, #fff);
->>>>>>> 84ab790a391af9fabd9b9eafbe555f8b2c4d5ca7
   font-family: var(--main-font-family, 'sans-serif');
   font-variation-settings: 'weight' var(--main-font-weight);
   color: var(--accent-color);
@@ -96,15 +93,11 @@
 
 
 .content {
-<<<<<<< HEAD
-  
-=======
->>>>>>> 84ab790a391af9fabd9b9eafbe555f8b2c4d5ca7
+
 }
 .cards {
 }
 .cards__list {
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -196,7 +189,6 @@ img.hue-rotate {
 
 .card__button {
 
-=======
 }
 .cards__list-item {
   inline-size: 700px;
@@ -211,5 +203,5 @@ img.hue-rotate {
 .card__footer {
 }
 .car__text {
->>>>>>> 84ab790a391af9fabd9b9eafbe555f8b2c4d5ca7
+
 }
