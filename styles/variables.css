@@ -12,6 +12,8 @@
     --color-red: #FF0000;
 
     --border-color: var(--color-black);
+    --button-text-color: var(--page-background-color);
+
 
     --background-image: repeating-linear-gradient(to left, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
@@ -28,4 +30,7 @@
 
     --header-logo-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
     --header-title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+
+    --like-contour: var(--border-color);
+    --like-sparks: var(--color-red);
 }

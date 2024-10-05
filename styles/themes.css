@@ -9,6 +9,7 @@
     --text-color: var(--color-black);
     --main-font-weight: 400;
     --main-font-title: 700;
+    --button-text-color: var(--color-white);
     --accent-color: var(--color-black);
     --page-background-color: #fff;
     --card-background-color: #fff;
@@ -24,6 +25,7 @@
     --text-color: var(--color-green);
     --main-font-weight: 465;
     --main-font-title: 785;
+    --button-text-color: var(--color-green);
     --accent-color: var(--color-green);
     --page-background-color: #000;
     --card-background-color: #000;
@@ -42,6 +44,7 @@
     --text-color: var(--color-green);
     --main-font-weight: 465;
     --main-font-title: 785;
+    --button-text-color: var(--color-green);
     --page-background-color: #000;
     --card-background-color: #000;
     --card__img_text: rgb(0, 0, 0, 0.6);
