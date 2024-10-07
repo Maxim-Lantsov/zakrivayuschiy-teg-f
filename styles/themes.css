@@ -13,7 +13,7 @@
     --accent-color: var(--color-black);
     --page-background-color: #fff;
     --card-background-color: #fff;
-    --card__img_text: rgb(255, 255, 255, 0.6);
+    --card__img_text: rgb(255, 255, 255);
     --border-color: var(--color-black);
     --background-image: repeating-linear-gradient(to left, #d3d3d3, #d3d3d3 2px, transparent 2px,transparent 4px),
     repeating-linear-gradient(to bottom,#d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
@@ -29,7 +29,7 @@
     --accent-color: var(--color-green);
     --page-background-color: #000;
     --card-background-color: #000;
-    --card__img_text: rgb(0, 0, 0, 0.6);
+    --card__img_text: rgb(0, 0, 0);
     --border-color: var(--color-green);
     --background-image: repeating-linear-gradient(to left, #000, #000 2px, transparent 2px,transparent 4px),
     repeating-linear-gradient(to bottom,#000, #000 2px, transparent 2px, transparent 4px),
@@ -47,7 +47,7 @@
     --button-text-color: var(--color-green);
     --page-background-color: #000;
     --card-background-color: #000;
-    --card__img_text: rgb(0, 0, 0, 0.6);
+    --card__img_text: rgb(0, 0, 0);
     --border-color: var(--color-green);
     --background-image: repeating-linear-gradient(to left, #000, #000 2px, transparent 2px,transparent 4px),
     repeating-linear-gradient(to bottom,#000, #000 2px, transparent 2px, transparent 4px),
