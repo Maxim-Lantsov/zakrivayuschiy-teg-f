@@ -31,6 +31,6 @@
     --header-logo-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
     --header-title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 
-    --like-contour: var(--border-color);
-    --like-sparks: var(--color-red);
+    --like-body: var(--border-color);
+    --like-red: var(--color-red);
 }
