@@ -318,10 +318,26 @@
           </li>
         </ul>
       </section>
-    </main>
-    <dialog class="">
+      <button 
+      type="button" 
+      onclick="window['dialog-id'].show()" 
+      aria-controls="dialog-id"
+      class="button__floppy"
+      >
+      
+      <span class="button__text">Сохранить на память</span>
+      </button>
+    </main> 
 
+    <dialog class="dialog">
+      
+      <form class="dialog__form">
+        <label for=""></label>
+      </form>
     </dialog>
+
+
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>
