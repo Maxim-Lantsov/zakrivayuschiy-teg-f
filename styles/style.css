@@ -338,38 +338,42 @@ img.hue-rotate {
   height: auto;
 }
 
-
 /*dialog*/
 
 .dialog {
-  background-color: var(--page-background-color);
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  gap: 30px;
   max-width: 353px;
+  padding: 30px;
+  background-color: var(--page-background-color);
 }
 
+.dialog::backdrop {}
+
 .dialog__content {
-  color: var(--button-text-color);
-  mix-blend-mode: difference;
   display: flex;
+  align-items: center;
   gap: 20px;
+  line-height: 21px;
 }
 
 .floppy__dialog_svg {
+  inline-size: 100%;
+  block-size: 100%;
   width: 39px;
+  flex-shrink: 0;
   height: auto;
 }
 
 .dialog__text {
-  color: var(--button-text-color);
   font-family: var(--accent-font-family);
-  mix-blend-mode: difference;
   text-transform: uppercase;
   font-size: 14px;
-  max-width: 234px;
 }
 
 .dialog__button {
-  width: 293px;
-  height: 38px;
   background-color: transparent;
-  border: 2px solid var(--border-color);
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
 }
