@@ -340,16 +340,22 @@ img.hue-rotate {
 
 /*dialog*/
 
-.dialog {
+.dialog[open] {
   display: grid;
   grid-template-rows: repeat(2, min-content);
   gap: 30px;
+  justify-items: center;
   max-width: 353px;
   padding: 30px;
   background-color: var(--page-background-color);
+  position: fixed;
+  inset: 0;
+  border: 2px solid var(--border-color);
 }
 
-.dialog::backdrop {}
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.6);
+} 
 
 .dialog__content {
   display: flex;
@@ -364,16 +370,43 @@ img.hue-rotate {
   width: 39px;
   flex-shrink: 0;
   height: auto;
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
 }
 
 .dialog__text {
   font-family: var(--accent-font-family);
+  max-width: 198px;
   text-transform: uppercase;
   font-size: 14px;
+  color: var(--button-text-color);
+  mix-blend-mode: difference;
 }
 
 .dialog__button {
+  position: relative;
+  z-index: 1;
   background-color: transparent;
   color: var(--button-text-color);
   mix-blend-mode: difference;
+  width: 257px;
+  height: 38px;
+  padding: 0;
+}
+
+.dialog__button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  inline-size: 100%;
+  block-size: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.dialog__button:hover::before {
+  transform: scaleX(1);
 }
