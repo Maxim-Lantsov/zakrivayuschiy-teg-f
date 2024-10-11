@@ -26,7 +26,7 @@
   background-size: cover;
   background-color: var(--card-background-color, #fff);
   background-color: var(--background-color, #fff);
-  font-family: var(--main-font-family, "sans-serif");
+  font-family: var(--main-font-family, sans-serif);
   font-variation-settings: "weight" var(--main-font-weight);
   color: var(--accent-color);
 }
@@ -38,13 +38,13 @@
   min-inline-size: 700px;
   border: solid 2px var(--border-color);
   background-color: var(--page-background-color);
-  font-family: var(--accent-font-family, "PressStart2P");
+  font-family: var(--accent-font-family, sans-serif);
   font-weight: var(--main-font-weight);
   text-transform: uppercase;
 }
 
 .header__logo {
-  padding-top: 136px;
+  
   padding-bottom: 22px;
   font-size: var(--header-logo-size);
 }
@@ -66,9 +66,6 @@
   line-height: 19px;
 }
 
-.theme-menu__item {
-}
-
 .theme-menu__button {
   font-size: 14px;
   text-transform: uppercase;
@@ -77,6 +74,7 @@
   cursor: pointer;
   border: none;
   position: relative;
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:hover {
@@ -140,7 +138,7 @@
 
 .card__title {
   border-bottom: 2px solid var(--border-color);
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.78px;
@@ -160,7 +158,7 @@
   top: 26px;
   right: 25px;
   opacity: 0.5;
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family, sans-serif);
   color: var(--text-color);
   z-index: 1;
   mix-blend-mode: hard-light;
@@ -171,6 +169,7 @@
   width: 696px;
   height: 696px;
   object-fit: cover;
+  object-position: center;
   inline-size: 100%;
   block-size: 100%;
 }
@@ -214,7 +213,7 @@ img.hue-rotate {
 }
 
 .card__text {
-  font-family: "Inter", "sans-serif";
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 18px;
   max-width: 646px;
@@ -250,28 +249,34 @@ img.hue-rotate {
 }
 
 .card__like-button {
+  width: 130px;
+  height: 38px;
+  padding: 0;
+}
+
+.button {
   position: relative;
   width: 130px;
   height: 38px;
   background: var(--page-background-color);
   z-index: 1;
   border: 2px solid var(--border-color);
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family, sans-serif);
   font-weight: var(--main-font-weight);
   font-size: 14px;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease;
   cursor: pointer;
 }
 
-.card__like-button:focus {
+.button:focus {
   outline: none;
 }
 
-.card__like-button:focus-visible {
+.button:focus-visible {
   box-shadow: 2px 2px 0 var(--border-color);
 }
 
-.card__like-button::before {
+.button::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -284,7 +289,7 @@ img.hue-rotate {
   transition: transform 0.5s ease-in-out;
 }
 
-.card__like-button:hover::before {
+.button:hover::before {
   transform: scaleX(1);
 }
 
@@ -302,36 +307,11 @@ img.hue-rotate {
   min-height: 51px;
   background: var(--page-background-color);
   border: 2px solid var(--border-color);
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family,sans-serif);
   font-weight: var(--main-font-weight);
   font-size: 14px;
   transition: box-shadow 0.3s ease-in-out;
   cursor: pointer;
-}
-
-.button__floppy:focus {
-  outline: none;
-}
-
-.button__floppy:focus-visible {
-  box-shadow: 2px 2px 0 var(--border-color);
-}
-
-.button__floppy::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: var(--border-color);
-  transform: scaleX(0);
-  transform-origin: left;
-  inline-size: 100%;
-  block-size: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.button__floppy:hover::before {
-  transform: scaleX(1);
 }
 
 .floppy__svg {
@@ -357,7 +337,7 @@ img.hue-rotate {
 }
 
 dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.6);
+  background-color: rgb(0 0 0 / 0.75);
 }
 
 .dialog__content {
@@ -378,7 +358,7 @@ dialog::backdrop {
 }
 
 .dialog__text {
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family,sans-serif);
   max-width: 198px;
   text-transform: uppercase;
   font-size: 14px;
@@ -389,7 +369,7 @@ dialog::backdrop {
 .dialog__button {
   position: relative;
   z-index: 1;
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family, sans-serif);
   font-size: 14px;
   text-transform: uppercase;
   background: var(--page-background-color);
@@ -400,38 +380,13 @@ dialog::backdrop {
   border: 2px solid var(--border-color);
 }
 
-.dialog__button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: var(--border-color);
-  transform: scaleX(0);
-  transform-origin: left;
-  inline-size: 100%;
-  block-size: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-
-.dialog__button:hover::before {
-  transform: scaleX(1);
-}
-
-.dialog__button:focus {
-  outline: none;
-}
-
-.dialog__button:focus-visible {
-  box-shadow: 2px 2px 0 var(--border-color);
-}
-
 @media screen and (max-width: 375px) {
   .header {
     min-inline-size: 375px;
   }
 
   .header__logo {
-    padding-top: 120px;
+    
   }
 
   .card {
