@@ -230,6 +230,9 @@ img.hue-rotate {
 /* button */
 
 .card__icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
   background-color: transparent;
