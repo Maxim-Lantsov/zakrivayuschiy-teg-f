@@ -160,7 +160,10 @@
   mix-blend-mode: hard-light;
 }
 
-@supports((text-stroke: 1px var(--card__img_text)) or (-webkit-text-stroke: 1px var(--card__img_text))) {
+@supports(
+  (-webkit-text-stroke: 1px var(--card__img_text)) or 
+  (text-stroke: 1px var(--card__img_text))
+) {
   .card__img_text {
       -webkit-text-stroke: 1px var(--card__img_text);
       text-stroke: 1px var(--card__img_text);
