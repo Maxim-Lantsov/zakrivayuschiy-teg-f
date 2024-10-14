@@ -15,10 +15,6 @@
 */
 
 .page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   background-image: var(--background-image);
@@ -32,10 +28,9 @@
 }
 
 .header {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  max-inline-size: 700px;
+  margin: 100px auto;
   text-align: center;
-  min-inline-size: 700px;
   border: solid 2px var(--border-color);
   background-color: var(--page-background-color);
   font-family: var(--accent-font-family, sans-serif);
@@ -44,8 +39,9 @@
 }
 
 .header__logo {
-  
-  padding-bottom: 22px;
+  display: block;
+  margin-top: 136px;
+  margin-bottom: 22px;
   font-size: var(--header-logo-size);
 }
 
@@ -116,14 +112,14 @@
 /*'▶'Меню */
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
+  margin-inline: auto;
+  max-inline-size: 700px;
 }
 
 .cards__list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 52px;
 }
 
@@ -140,7 +136,7 @@
   border-bottom: 2px solid var(--border-color);
   font-family: "Inter", sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-variation-settings: "wght" var(--main-font-title, 700);
   line-height: 21.78px;
   padding: 3px 24px 3px 10px;
 }
@@ -152,7 +148,7 @@
 }
 
 .card__img_text {
-  -webkit-text-stroke: 1px var(--card__img_text);
+  text-shadow: 1px 1px 1px var(--card__img_text);
   font-size: 14px;
   position: absolute;
   top: 26px;
@@ -163,6 +159,14 @@
   z-index: 1;
   mix-blend-mode: hard-light;
 }
+
+@supports((text-stroke: 1px var(--card__img_text)) or (-webkit-text-stroke: 1px var(--card__img_text))) {
+  .card__img_text {
+      -webkit-text-stroke: 1px var(--card__img_text);
+      text-stroke: 1px var(--card__img_text);
+      text-shadow: none;
+  }
+} 
 
 .card__img {
   display: block;
@@ -214,7 +218,7 @@ img.hue-rotate {
 
 .card__text {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-variation-settings: "wght" var(--main-font-weight, 400);
   font-size: 18px;
   max-width: 646px;
 }
@@ -300,7 +304,6 @@ img.hue-rotate {
 
 .button__floppy {
   position: relative;
-  margin: 52px auto 105px auto;
   padding: 0;
   z-index: 1;
   min-width: 335px;
@@ -312,6 +315,8 @@ img.hue-rotate {
   font-size: 14px;
   transition: box-shadow 0.3s ease-in-out;
   cursor: pointer;
+  margin-top: 52px;
+  margin-bottom: 105px;
 }
 
 .floppy__svg {
@@ -386,7 +391,7 @@ dialog::backdrop {
   }
 
   .header__logo {
-    
+    margin-top: 120px;
   }
 
   .card {
@@ -404,6 +409,8 @@ dialog::backdrop {
   }
 
   .button__floppy {
+    margin-top: 54px;
+    margin-bottom: 122px;
     display: flex;
     gap: 8px;
     flex-direction: column;

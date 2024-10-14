@@ -37,6 +37,22 @@
 }
 
 
+:root.theme-auto {
+    --background-color: var(--color-black, #000000);
+    --text-color: var(--color-green);
+    --main-font-weight: 465;
+    --main-font-title: 785;
+    --button-text-color: var(--color-green);
+    --accent-color: var(--color-green);
+    --page-background-color: #000;
+    --card-background-color: #000;
+    --card__img_text: rgb(0, 0, 0);
+    --border-color: var(--color-green);
+    --background-image: repeating-linear-gradient(to left, #000, #000 2px, transparent 2px,transparent 4px),
+    repeating-linear-gradient(to bottom,#000, #000 2px, transparent 2px, transparent 4px),
+    linear-gradient(to bottom, #007f0c, #004306);
+}
+
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -54,4 +70,3 @@
     linear-gradient(to bottom, #007f0c, #004306); 
     }
 }
-
