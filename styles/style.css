@@ -138,7 +138,7 @@
   font-size: 18px;
   font-variation-settings: "wght" var(--main-font-title, 700);
   line-height: 21.78px;
-  padding: 3px 24px 3px 10px;
+  padding: 4px 24px 3px 10px;
 }
 
 .card__image {
@@ -251,7 +251,7 @@ img.hue-rotate {
   display: flex;
   justify-content: end;
   align-items: center;
-  margin: 23px 25px 22px 0;
+  margin: 26px 25px 22px 0;
   gap: 4px;
 }
 
