@@ -345,7 +345,6 @@ img.hue-rotate {
   gap: 30px;
   justify-items: start;
   min-width: 357px;
-  min-height: 193px;
   padding: 30px;
   background-color: var(--page-background-color);
   position: fixed;
