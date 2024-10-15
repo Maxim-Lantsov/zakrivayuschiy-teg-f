@@ -114,6 +114,7 @@
 .content {
   display: grid;
   justify-items: center;
+  align-items: center;
   margin-inline: auto;
   max-inline-size: 700px;
 }
@@ -309,6 +310,10 @@ img.hue-rotate {
 }
 
 .button__floppy {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 8px;
   position: relative;
   padding: 0;
   z-index: 1;
