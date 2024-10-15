@@ -343,8 +343,9 @@ img.hue-rotate {
   display: grid;
   grid-template-rows: repeat(2, min-content);
   gap: 30px;
-  justify-items: center;
-  max-width: 353px;
+  justify-items: start;
+  min-width: 357px;
+  min-height: 193px;
   padding: 30px;
   background-color: var(--page-background-color);
   position: fixed;
@@ -390,7 +391,7 @@ dialog::backdrop {
   text-transform: uppercase;
   background: var(--page-background-color);
   color: var(--button-text-color);
-  width: 257px;
+  width: 293px;
   height: 38px;
   padding: 0;
   border: 2px solid var(--border-color);
@@ -421,7 +422,7 @@ dialog::backdrop {
 
   .button__floppy {
     margin-top: 54px;
-    margin-bottom: 122px;
+    margin-bottom: 102px;
     display: flex;
     gap: 8px;
     flex-direction: column;
@@ -429,5 +430,9 @@ dialog::backdrop {
     align-items: center;
     min-width: 306px;
     min-height: 80px;
+  }
+
+  .floppy__svg {
+    max-width: 28px;
   }
 }
